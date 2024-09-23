@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "johndoe@example.com",
+      "phone": "555-1234",
+      "website": "johndoe.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "janesmith@example.com",
+      "phone": "555-5678",
+      "website": "janesmith.net"
+    },
+    {
+      "id": 3,
+      "name": "Robert Brown",
+      "username": "robbrown",
+      "email": "robbrown@example.com",
+      "phone": "555-8765",
+      "website": "robbrown.org"
+    },
+    {
+      "id": 4,
+      "name": "Emily Johnson",
+      "username": "emilyj",
+      "email": "emilyj@example.com",
+      "phone": "555-4321",
+      "website": "emilyjohnson.me"
+    },
+    {
+      "id": 5,
+      "name": "Michael Davis",
+      "username": "miked",
+      "email": "michaeld@example.com",
+      "phone": "555-3456",
+      "website": "michaeldavis.info"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Wilson",
+      "username": "sophiw",
+      "email": "sophiawilson@example.com",
+      "phone": "555-6543",
+      "website": "sophiawilson.io"
+    },
+    {
+      "id": 7,
+      "name": "David Lee",
+      "username": "davidl",
+      "email": "davidlee@example.com",
+      "phone": "555-9876",
+      "website": "davidlee.co"
+    },
+    {
+      "id": 8,
+      "name": "Isabella White",
+      "username": "isabellaw",
+      "email": "isabellaw@example.com",
+      "phone": "555-8764",
+      "website": "isabellawhite.com"
+    },
+    {
+      "id": 9,
+      "name": "James Green",
+      "username": "jamesg",
+      "email": "jamesgreen@example.com",
+      "phone": "555-2345",
+      "website": "jamesgreen.dev"
+    },
+    {
+      "id": 10,
+      "name": "Olivia Black",
+      "username": "oliviab",
+      "email": "oliviablack@example.com",
+      "phone": "555-5432",
+      "website": "oliviablack.biz"
+    }
+  ]
+  
