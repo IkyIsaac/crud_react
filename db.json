@@ -1,4 +1,5 @@
-[
+{
+  "users": [
     {
       "id": 1,
       "name": "John Doe",
@@ -78,6 +79,12 @@
       "email": "oliviablack@example.com",
       "phone": "555-5432",
       "website": "oliviablack.biz"
+    },
+    {
+      "id": "2e61",
+      "name": "Eric Mbaga",
+      "email": "teste@exemplo.us",
+      "phone": "2233-334-234"
     }
   ]
-  
+}
