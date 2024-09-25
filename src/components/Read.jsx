@@ -3,17 +3,20 @@ import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 
 const Read = () => {
-  const[data,setData]=useState({})
+  const[data,setData]=useState([])
   const {id}=useParams()
   console.log("Data",data)
 
+
   useEffect(() => {
-    // const numId = parseInt(id, 10); 
-    // console.log(numId)
     console.log(id)
 
-    axios.get('http://localhost:3001/users/'+id)
-      .then(res => setData(res.data))
+    axios.get(`http://localhost:3001/users/${id}`)
+      .then(res => {
+        
+          setData(res.data)
+        
+  })
       .catch(err => console.error(err));  
   }, [id]);
 
@@ -36,5 +39,7 @@ const Read = () => {
     </div>
   )
 }
+
+
 
 export default Read
