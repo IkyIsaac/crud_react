@@ -1,18 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const[data,setData]=useState([])
+  const navigate=useNavigate
 
   useEffect(() => {
     axios.get('http://localhost:3001/users')
       .then(res => {
         setData(res.data)
+        console.log(data)
       })
       .catch(err => console.error(err));  
   }, []);
 
+  const handleDelete=(id)=>{
+    const confirm=window.confirm('Would you want to delete this user?')
+
+    if(confirm){
+      axios.delete(`http://localhost:3001/users/${id}`)
+      .then(res=>{
+        location.reload()
+      }).catch(err=>console.log(err))
+    }
+  }
+  
 
   return (
     <div className='d-flex flex-column justify-content-center align-items-center bg-light vh-100'>
@@ -39,8 +52,8 @@ const Home = () => {
                   <td>{d.phone}</td>
                   <td>
                   <Link to={`/read/${d.id}`} className='btn btn-sm btn-info mx-2'>Read</Link>
-                  <button className='btn btn-sm btn-primary mx-2'>Edit</button>
-                  <button className='btn btn-sm btn-danger'>Delete</button>
+                  <Link to={`/update/${d.id}`} className='btn btn-sm btn-primary mx-2'>Edit</Link>
+                  <button onClick={e=>handleDelete(d.id)} className='btn btn-sm btn-danger'>Delete</button>
                   </td>
                 </tr>
               ))
